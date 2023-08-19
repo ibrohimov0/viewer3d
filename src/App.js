@@ -21,17 +21,17 @@ function App() {
   return (
     <div className="App">
       <div className="box">
+        <div className="Text">
+          <h1>3D Objects</h1>
+          <p>This object was created with Blender.You can see 360*.Everything looks good. :)</p>
+        </div>
         <div className="Model">
-          <Canvas>
+          <Canvas className="Canvas">
             <OrbitControls />
             <ambientLight intensity={1.5} />
             <spotLight position={[10,15,10]} angle={0.3} />
             <Model/>
           </Canvas>
-        </div>
-        <div className="Text">
-          <h1>3d Objects</h1>
-          <p>This object was created with Blender.You can see 360*.Everything looks good. :)</p>
         </div>
       </div>
 
